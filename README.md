@@ -1,2 +1,3 @@
 # Image_manipulation_detection_pytorch
 Image_manipulation_detection_pytorch
+pytorch 1.9.1
