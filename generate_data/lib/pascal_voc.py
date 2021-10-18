@@ -156,13 +156,13 @@ class pascal_voc(imdb):
        
         tree = ET.parse(filename)
         objs = tree.findall('object')
-        #if not self.config['use_diff']:
+        if not self.config['use_diff']:
 
-           # non_diff_objs = [
-            #    obj for obj in objs if int(obj.find('diffcult').text) == 0
-         #   ]
+            non_diff_objs = [
+                obj for obj in objs if int(obj.find('difficult').text) == 0
+            ]
 
-          #  objs = non_diff_objs
+            objs = non_diff_objs
 
         num_objs = len(objs)  
 
